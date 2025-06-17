@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #3a0038, #000000);
+  color: #eee;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(to right, #8b004e, #000000);
+  color: white;
+  padding: 50px 20px 80px;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  padding: 15px 30px;
+  max-width: 1000px;
+  margin: -40px auto 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #e91e63, #ffafcc);
+  color: #121212;
+}
+
+main {
+  padding: 60px 20px;
+}
+
+section {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.2em;
+  color: #fff;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px #e91e63;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 50px rgba(233, 30, 99, 0.4);
+}
+
+.card img,
+.card video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #e91e63;
+  display: block;
+}
+
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+}
+
+footer a {
+  color: #ffafcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
